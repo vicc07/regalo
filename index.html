@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para el amor de mi vida ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🎵 MÚSICA -->
+  <audio id="musica" loop>
+    <source src="audio/musica.mpeg" type="audio/mpeg">
+  </audio>
+
+  <!-- 💖 PANTALLA INICIAL -->
+  <div id="inicio" class="inicio">
+    <h1>💖 Tengo algo para ti 💖</h1>
+    <button class="btn" onclick="empezar()">
+      ¿Empezamos mi niña? ❤️
+    </button>
+  </div>
+
+  <!-- CONTENIDO (OCULTO AL INICIO) -->
+  <div id="contenido" class="hidden">
+
+    <div class="container">
+
+      <h1>❤️ Para el amor de mi vida ❤️</h1>
+      <h1>Mi Mayucita</h1>
+
+      <!-- GALERÍA -->
+      <div class="galeria">
+        <img src="img/foto1.png">
+        <img src="img/foto2.png">
+        <img src="img/foto3.jpeg">
+        <img src="img/foto4.jpeg">
+        <img src="img/foto5.png">
+        <img src="img/foto6.png">
+        <img src="img/foto7.png">
+        <img src="img/foto8.png">
+        <img src="img/foto9.png">
+        <img src="img/foto10.png">
+        <img src="img/foto11.png">
+        <img src="img/foto12.png">
+        <img src="img/foto13.png">
+        <img src="img/foto14.png">
+        <img src="img/foto15.png">
+      </div>
+
+      <p>Cuando estés lista… dale al botón ❤️</p>
+
+      <button class="btn" onclick="mostrarSorpresa()">
+        Una parte de mi ❤️
+      </button>
+
+      <!-- SORPRESA -->
+      <div id="sorpresa" class="hidden">
+
+        <h2>❤️ Feliz cumpleaños mi amor ❤️</h2>
+        <p id="contador"></p>
+
+        <div class="video-container">
+          <video controls>
+            <source src="video/mensaje.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div id="juego" class="hidden">
+          <h2>🎯 Responde esto 😏</h2>
+          <p id="pregunta"></p>
+          <div id="opciones"></div>
+        </div>
+
+        <div id="premio" class="hidden">
+          <h2>🎉 ¡Felicidades mi amor! 🎉</h2>
+          <button class="btn" onclick="reclamarPremio()">
+            Reclamar premio 🎁
+          </button>
+        </div>
+
+        <div id="final" class="hidden">
+          <h2> Te mereces esto y mucho más </h2>
+          <p><strong>$100 para lo que tú quieras, Shein, AliEsprexx, etc..... aunque adivino, quizas comida?
+          </strong></p>
+          <p>Te amo muchísimo ❤️</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- DECORACIÓN -->
+  <div id="decoracion"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
